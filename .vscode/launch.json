@@ -21,6 +21,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\Express\\routers\\index"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jade Templates",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\templates\\jade\\bin\\www"
+        },
     ]
 }

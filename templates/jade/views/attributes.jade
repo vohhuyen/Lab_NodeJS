@@ -1,0 +1,46 @@
+doctype html 
+html(lange="en")
+    head   
+        title = title;
+        body(class=authenticated ? 'authed' : 'anon')
+        
+    a(href='google.com') Google
+    a(class='button', href='google.com') Google
+
+    body(class=authenticated ? 'authed' : 'anon')
+
+    input(
+      type='checkbox'
+      name='agreement'
+      checked
+    )
+
+    div(escaped="<code>")
+    div(unescaped!="<code>")
+
+    input(type='checkbox', checked)
+    input(type='checkbox', checked=true)
+    input(type='checkbox', checked=false)
+    input(type='checkbox', checked=true.toString())
+
+    a(style={color: 'red', background: 'green'})
+
+    a(class=classes)
+    a.bing(class=classes class=['bing'])
+
+    a(class={active: currentUrl === '/'} href='/') Home
+    a(class={active: currentUrl === '/about'} href='/about') About
+
+    a.button
+
+    .content
+
+    a#main-link
+
+    #content
+
+    div#foo(data-bar="foo")&attributes({'data-foo': 'bar'})
+
+    
+    div#foo(data-bar="foo")&attributes(attributes)
+
