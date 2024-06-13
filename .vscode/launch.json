@@ -21,6 +21,42 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\Express\\routers\\index"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jade Templates",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\templates\\jade\\bin\\www"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Demo DB",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\database\\sequelize\\db\\Model_instances"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Model query",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\database\\sequelize\\db\\Model_querying"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Validation",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\database\\sequelize\\db\\Validation_contraints"
+        },
     ]
 }
