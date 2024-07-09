@@ -58,5 +58,14 @@
             ],
             "program": "${workspaceFolder}\\database\\sequelize\\db\\Validation_contraints"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Todo",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\todos-express\\bin\\www"
+        },
     ]
 }
