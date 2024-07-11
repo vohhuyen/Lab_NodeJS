@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title = title; 
+  body
+  
+    ul
+      - for (var x = 0; x < 3; x++)
+        li item
+
+   
+    ul
+      - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+      each item in list
+        li= item
+
+    p= 'This code is <escaped>!'
+
+   
+    p!= 'This code is' + ' <strong>not</strong> escaped!'
